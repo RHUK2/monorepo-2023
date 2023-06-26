@@ -7,7 +7,12 @@
     "shared/*"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:service": "npm run dev -w apps/service",
+    "dev:admin": "npm run dev -w apps/admin",
+    "build:service": "npm run build -w apps/service",
+    "build:admin": "npm run build -w apps/admin",
+    "start:service": "npm run start -w apps/service",
+    "start:admin": "npm run start -w apps/admin"
   },
   "dependencies": {
     "@shared/components": "^0.1.0",
