@@ -1,8 +1,12 @@
-import { Button } from '@shared/components';
+'use client';
+
 import Image from 'next/image';
 import styles from './page.module.css';
+import { Button } from '@shared/components';
+import { hooks, hooks2, hooks3 } from '@shared/hooks';
 
 export default function Home() {
+  console.log(hooks3);
   return (
     <main className={styles.main}>
       <Button />

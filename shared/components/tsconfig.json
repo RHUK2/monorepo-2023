@@ -1,4 +1,12 @@
 {
-  "extends": "../../tsconfig.json",
-  "include": ["**/*.ts", "**/*.tsx"]
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "noEmit": false,
+    "jsx": "react-jsx",
+    "outDir": "dist"
+  },
+  "include": ["**/*.tsx", "**/*.ts"],
+  "exclude": ["node_modules"]
 }
